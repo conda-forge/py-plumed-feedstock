@@ -1,6 +1,6 @@
 {% set name = "py-plumed" %}
-{% set version = "2.6.0" %}
-{% set sha256 = "3d57ae460607a49547ef38a52c4ac93493a3966857c352280a9c05f5dcdb1820" %}
+{% set version = "2.6.1" %}
+{% set sha256 = "c1b3c397b2d971140aa240dde50e48a04ce78e3dedb02b6dca80fa53f8026e4e" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win or py2k]
+  skip: true  # [win or py2k]
 
 requirements:
   build:
@@ -38,7 +38,7 @@ about:
   license: LGPL-3.0
   license_family: GPL
   license_file: COPYING.LESSER
-  summary: 'Python wrappers for plumed library'
+  summary: Python wrappers for plumed library
   description: |
     PLUMED is an open source library for free energy calculations in
     molecular systems which works together with some of the most
