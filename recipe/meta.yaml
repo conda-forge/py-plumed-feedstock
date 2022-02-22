@@ -1,6 +1,6 @@
 {% set name = "py-plumed" %}
-{% set version = "2.7.3" %}
-{% set sha256 = "aa1f6200c2ed351e40ce4391a9590f171532474b30f384feddfab10e36d7e08e" %}
+{% set version = "2.7.4" %}
+{% set sha256 = "6f5dc16a753c71ed719f17f9cbb61642ab8e716fb7f77e22960dfa145c3b8211" %}
 
 package:
   name: {{ name|lower }}
