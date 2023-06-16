@@ -7,11 +7,15 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/plumed/plumed2/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+#  url: https://github.com/plumed/plumed2/archive/v{{ version }}.tar.gz
+#  sha256: {{ sha256 }}
+  url: https://github.com/plumed/plumed2/archive/f63172296b5ca913180947a2c40a98d053cff2f4.tar.gz
+  sha256: 0aac2b51c0f56512e93a12289d87023aca0b0279c1d57fac8627f3e1764fe6c7
+  
 
+# this is a fix for conda, see https://github.com/plumed/plumed2/issues/952
 build:
-  number: 0
+  number: 1
   skip: true  # [win or py2k]
 
 requirements:
