@@ -15,7 +15,7 @@ source:
 
 # this is a fix for conda, see https://github.com/plumed/plumed2/issues/952
 build:
-  number: 1
+  number: 2
   skip: true  # [win or py2k]
 
 requirements:
