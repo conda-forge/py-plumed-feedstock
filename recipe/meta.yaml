@@ -1,21 +1,18 @@
 {% set name = "py-plumed" %}
-{% set version = "2.9.0" %}
-{% set sha256 = "612d2387416b5f82dd8545709921440370e144fd46cef633654cf0ee43bac5f8" %}
+{% set version = "2.9.1" %}
+{% set sha256 = "e24563ad1eb657611918e0c978d9c5212340f128b4f1aa5efbd439a0b2e91b58" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-#  url: https://github.com/plumed/plumed2/archive/v{{ version }}.tar.gz
-#  sha256: {{ sha256 }}
-  url: https://github.com/plumed/plumed2/archive/f63172296b5ca913180947a2c40a98d053cff2f4.tar.gz
-  sha256: 0aac2b51c0f56512e93a12289d87023aca0b0279c1d57fac8627f3e1764fe6c7
+  url: https://github.com/plumed/plumed2/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
   
 
-# this is a fix for conda, see https://github.com/plumed/plumed2/issues/952
 build:
-  number: 2
+  number: 0
   skip: true  # [win or py2k]
 
 requirements:
