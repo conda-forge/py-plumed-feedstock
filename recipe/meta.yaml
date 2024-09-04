@@ -1,6 +1,6 @@
 {% set name = "py-plumed" %}
-{% set version = "2.9.1" %}
-{% set sha256 = "e24563ad1eb657611918e0c978d9c5212340f128b4f1aa5efbd439a0b2e91b58" %}
+{% set version = "2.9.2" %}
+{% set sha256 = "301fbc958374f81d9b8c7a1eac73095f6dded52cce73ce33d64bdbebf51ac63d" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 source:
   url: https://github.com/plumed/plumed2/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  
+
 
 build:
   number: 0
@@ -21,9 +21,11 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make
   host:
     - python
+    - setuptools
     - pip
     - cython
   run:
