@@ -1,6 +1,6 @@
 {% set name = "py-plumed" %}
-{% set version = "2.9.2" %}
-{% set sha256 = "301fbc958374f81d9b8c7a1eac73095f6dded52cce73ce33d64bdbebf51ac63d" %}
+{% set version = "2.9.3" %}
+{% set sha256 = "0abf3098d11a8720d6f8d0b65df6a8da5ccd013c7b4a8ddbbc86229066d7d640" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or py2k]
 
 requirements:
